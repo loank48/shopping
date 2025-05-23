@@ -199,7 +199,7 @@ while($row=mysqli_fetch_array($sql))
 							<div class="category-product  inner-top-vs">
 								<div class="row">									
 			<?php
-$ret=mysqli_query($con,"select * from products where category='$cid'");
+$ret = mysqli_query($con, "SELECT * FROM products WHERE category='$cid' ORDER BY postingDate DESC");
 $num=mysqli_num_rows($ret);
 if($num>0)
 {
